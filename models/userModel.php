@@ -8,8 +8,8 @@ function get()
 
     try {
         $query->execute();
-        $employees = $query->fetchAll();
-        return $employees;
+        $users = $query->fetchAll();
+        return $users;
     } catch (PDOException $e) {
         return [];
     }

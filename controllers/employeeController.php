@@ -1,6 +1,6 @@
 <?php
 
-require_once MODELS . "employeeModel.php";
+require_once MODELS . "userModel.php";
 
 //OBTAIN THE ACCION PASSED IN THE URL AND EXECUTE IT AS A FUNCTION
 
@@ -27,9 +27,9 @@ if (function_exists($action)) {
  */
 function getAllEmployees()
 {
-    $employees = get();
-    if (isset($employees)) {
-        require_once VIEWS . "/employee/employeeDashboard.php";
+    $users = get();
+    if (isset($users)) {
+        require_once VIEWS . "/user/userDashboard.php";
     } else {
         error("There is a database error, try again.");
     }  //

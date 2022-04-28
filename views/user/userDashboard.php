@@ -26,14 +26,14 @@
         </thead>
         <tbody>
             <?php
-            foreach ($employees as $index => $employee) {
+            foreach ($users as $index => $user) {
                 echo "<tr>";
-                echo "<td class='tg-0lax'>" . $employee["ID"] . "</td>";
-                echo "<td class='tg-0lax'>" . $employee["Codigo"] . "</td>";
-                echo "<td class='tg-0lax'>" . $employee["Nombre"] . "</td>";
-                echo "<td class='tg-0lax'>" . $employee["Contraseña"] . "</td>";
-                echo "<td class='tg-0lax'>" . $employee["Fecha"] . "</td>";
-                echo "<td class='tg-0lax'>" . $employee["Activo"] . "</td>";
+                echo "<td class='tg-0lax'>" . $user["ID"] . "</td>";
+                echo "<td class='tg-0lax'>" . $user["Codigo"] . "</td>";
+                echo "<td class='tg-0lax'>" . $user["Nombre"] . "</td>";
+                echo "<td class='tg-0lax'>" . $user["Contraseña"] . "</td>";
+                echo "<td class='tg-0lax'>" . $user["Fecha"] . "</td>";
+                echo "<td class='tg-0lax'>" . $user["Activo"] . "</td>";
                 echo "</tr>";
             }
             ?>
